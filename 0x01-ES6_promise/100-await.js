@@ -8,7 +8,7 @@ export default async function asyncUploadUser() {
     if (!res1 || !res2) return { photo: null, user: null };
 
     return {
-      photo: res1.body,
+      photo: res1,
       user: res2,
     };
   } catch (err) {
