@@ -5,5 +5,5 @@ export default function cleanSet(set, str) {
 
   arr.filter((item) => typeof item === 'string' && item.includes(str)).map((item) => strs.push(item.replace(str, '')));
 
-  return Array.from(new Set(arr)).join('-');
+  return Array.from(new Set(strs)).join('-');
 }
