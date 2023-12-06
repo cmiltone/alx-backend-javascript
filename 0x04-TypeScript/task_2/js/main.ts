@@ -47,3 +47,10 @@ const executeWork = (employee: Director | Teacher): void => {
   if (isDirector(employee)) (employee as Director).workDirectorTasks();
   else (employee as Teacher).workTeacherTasks();
 }
+
+type Subjects = 'Math' | 'History';
+
+function teachClass(todayClass: Subjects): string {
+  if (todayClass === 'Math') return 'Teaching Math';
+  else if (todayClass === 'History') return 'Teaching History';
+}
