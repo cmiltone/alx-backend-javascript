@@ -1,5 +1,5 @@
-type insertRow = (row: RowElement) => RowID;
+export function insertRow(row: RowElement): RowID;
 
-type deleteRow = (rowId: RowID) => void;
+export function deleteRow(rowId: RowID): void;
 
-type updateRow = (rowId: RowID, row: RowElement) => RowID;
+export function updateRow(rowId: RowID, row: RowElement): RowID;
