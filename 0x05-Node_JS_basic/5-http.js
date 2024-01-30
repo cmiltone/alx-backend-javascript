@@ -105,7 +105,7 @@ app.on('request', (req, res) => {
 });
 
 app.listen(1245, 'localhost', () => {
-  process.stdout.write(`Server listening at -> http://localhost:1245\n`);
+  process.stdout.write('Server listening at -> http://localhost:1245\n');
 });
 
 module.exports = app;
